@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Belleza&family=Labrada:ital,wght@1,300&family=Lora:ital@0;1&family=Mallanna&family=Playfair+Display:ital,wght@1,400;1,500&family=Rubik+Iso&family=Rubik+Mono+One&family=Share+Tech+Mono&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+
+body{
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 40px;
+    margin: 30px;
+    text-align: center;
+
+
+}
+
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+#logo img{
+    width: 45%;
+    height: 45%;
+
+}
+
+/* NAV */
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-start;
+}
+
+nav h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+nav a{
+    font-size: 30px;
+    text-decoration: none;
+    color:#fff;
+    text-align:right;
+    display:inline;
+    margin: 1px;
+    padding: 5px;
+}
+
+
+/*BODY */
+
+.card-img{
+    border-radius: 10px;
+}
+
+.card-img:hover{
+    transform: scale(1.05);
+}
+
+
+#resultado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px 30px;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    font-size: 30px;
+    color: #fff;
+}
+

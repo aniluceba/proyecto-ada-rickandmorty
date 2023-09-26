@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rick and Morty</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="rickandmorty2removebg.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Todos</a>
+        <a href="mujeres.html">Mujeres</a>
+        <a href="hombres.html">Hombres</a>
+        <a href="singenero.html">Sin Género</a>
+        <a href="desconocido.html">Género Desconocido</a>
+    </nav>
+
+    <div id="logo">
+        <img src="rickandmortygif.gif">
+    </div>
+
+    <h1>PERSONAJES</h1>
+</header>
+
+<main>
+<h3>PÁGINA</h3>
+<select name="pagina" id="pagina" onchange="apiRick(this.value)">
+    <script>
+        for (let i=1; i<=42; i++) {
+            document.write(`<option value="${i}">${i}</option>`);
+        }
+</script>
+</select>
+<div id="resultado">
+
+</div>
+
+<div id="botones">
+ 
+    <button id="btnPrimeraPagina"><< Primera Página</button>
+    <button id="anterior"> < Anterior </button>
+    <button id="siguiente"> Siguiente > </button>
+    <button id="btnUltimaPagina">Ultima Página >></button>
+
+</div>
+
+</main>
+
+<footer>
+    <div class="footer">
+        <p>© Proyecto Final de <strong>Ana Lucía Ceballos Cáceres</strong></p>
+        <p>Septiembre 2023</p>
+    </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
+
+
